@@ -1,11 +1,13 @@
 
 function fizzbuzz(n) {
+    let result = ""
     if((n % 3) === 0) {
-      console.log("Fizz")
+      result += "Fizz"
     }
     else if ((n % 5) === 0) {
-      console.log("Buzz")
+      result += "Buzz"
     }
+    console.log(result)
 }
 
 module.exports = { fizzbuzz }
