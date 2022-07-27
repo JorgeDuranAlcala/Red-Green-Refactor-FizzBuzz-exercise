@@ -1,6 +1,8 @@
 
 function fizzbuzz(n) {
-    console.log("Fizz")
+    if((n % 3) === 0) {
+      console.log("Fizz")
+    }
 }
 
 module.exports = { fizzbuzz }
