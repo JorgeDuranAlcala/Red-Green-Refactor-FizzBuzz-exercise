@@ -39,4 +39,18 @@ describe("fizzbuzz", () => {
         })
 
    })
+
+     describe("Input is multiple of 5 and 3", () => {
+
+        it("should print 'FizzBuzz' when input is multiple of 5 and 3", () => {
+                fizzbuzz(15);
+                expect(spyOnConsole).toHaveBeenCalledWith('FizzBuzz')
+        })
+
+        it("should not print 'FizzBuzz' when input is not multiple of 5 and 3", () => {
+                fizzbuzz(2);
+                expect(spyOnConsole).not.toHaveBeenCalledWith('FizzBuzz')
+        })
+
+   })
 })
